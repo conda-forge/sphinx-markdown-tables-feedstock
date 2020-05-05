@@ -35,10 +35,6 @@ about:
   home: https://github.com/ryanfox/sphinx-markdown-tables
   license: GPL-3.0-only
   license_family: GPL3
-  # Manually including license file in recipe as upstream does not
-  # currently package it.  If/when the following issue is resolved,
-  # the file can be removed from the recipe.
-  # https://github.com/ryanfox/sphinx-markdown-tables/issues/27
   license_file: LICENSE
   summary: A Sphinx extension for rendering tables written in markdown
   description: |
