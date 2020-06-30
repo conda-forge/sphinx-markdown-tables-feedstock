@@ -10,7 +10,7 @@ source:
   sha256: d604853c065ddaec63844dbd67232da34679fbd9c9780bbd3a6bca4f8a801a9a
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -19,7 +19,7 @@ requirements:
     - pip
     - python
   run:
-    - markdown ==3.0.1
+    - markdown >=3.0.1
     - python >=3.5
     - recommonmark
 
