@@ -1,5 +1,5 @@
 {% set name = "sphinx-markdown-tables" %}
-{% set version = "0.0.14" %}
+{% set version = "0.0.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d604853c065ddaec63844dbd67232da34679fbd9c9780bbd3a6bca4f8a801a9a
+  sha256: c5f423a018aed9447aad1fbbada32c21c7565183aaf2da3c7fdb7bf4dffa3a0b
 
 build:
   number: 0
@@ -19,7 +19,7 @@ requirements:
     - pip
     - python
   run:
-    - markdown ==3.0.1
+    - markdown >=3.0.1
     - python >=3.5
     - recommonmark
 
