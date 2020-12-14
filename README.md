@@ -5,9 +5,13 @@ Home: https://github.com/ryanfox/sphinx-markdown-tables
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-markdown-tables-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Sphinx extension for rendering tables written in markdown
+
+Development: https://github.com/ryanfox/sphinx-markdown-tables/
+
+Documentation: https://pypi.org/project/sphinx-markdown-tables/
 
 Sphinx supports markdown via Recommonmark, which does not support
 tables. This extension provides them.
