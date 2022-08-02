@@ -1,5 +1,5 @@
 {% set name = "sphinx-markdown-tables" %}
-{% set version = "0.0.15" %}
+{% set version = "0.0.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 722b70a3a14156b6777cf04920d015215eb65b9dfde5cc72f430763ff5e84173
+  sha256: 9c0f47acf590273fd41f77d793329546552e30f7b07922d727cb027e989b6409
 
 build:
   number: 0
