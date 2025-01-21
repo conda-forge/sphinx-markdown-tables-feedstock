@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 6bc6d3d400eaccfeebd288446bc08dd83083367c58b85d40fe6c12d77ef592f1
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
   run:
     - markdown >=3.0.1
-    - python >=3.5
+    - python >={{ python_min }}
     - recommonmark
 
 test:
@@ -28,6 +28,7 @@ test:
     - sphinx_markdown_tables
   requires:
     - sphinx
+    - python {{ python_min }}
   files:
     - test.md
 
